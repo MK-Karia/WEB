@@ -4,7 +4,6 @@
 
 main {
     width: 1440px;
-    height: 2600px;
 }
 
 .header-box {
@@ -19,7 +18,7 @@ main {
 }
 
 h1 {
-    font-family: Lora;
+    font-family: Lora, Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight: 400;
     line-height: 51px;
@@ -29,7 +28,7 @@ h1 {
 }
 
 h2 {
-    font-family: Oxygen;
+    font-family: Oxygen, Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
@@ -49,10 +48,9 @@ img {
 
 .content {
     width: 1440px;
-    height: 1706px;
     top: 894px;
     background: #F7F7F7;
-    font-family: Oxygen;
+    font-family: Oxygen, Arial, Helvetica, sans-serif;
 
 }
 
@@ -60,8 +58,8 @@ img {
     width: 960px;
     height: 1431px;
     left: 240px;
-    position: absolute;
-    margin-top: 130px;
+    margin-left: 250px;
+    padding-top: 130px;
 }
 
 .content p {
@@ -73,16 +71,15 @@ img {
     padding-bottom: 20px;
 }
 
-footer {
+footer{
     width: 1440px;
     height: 89px;
     background-image: url("../img/footer.jpg");
     background-size: cover;
-    background-position-y: 50%;
-    
+    background-position-y: 50%; 
 }
 
-nav {
+nav{
     width: 1440px;
     height: 74px;
     margin-bottom: 80px;
@@ -90,16 +87,13 @@ nav {
     padding-left: 250px;
     padding-top: 20px;
     padding-right: 250px;
-    
 }
 
-nav p{
+nav img{
     display: inline-block;
-    font-family: Lora;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
+    width: 92px;
+    height: 26px;
+
     text-align: left;
 }
 
@@ -111,8 +105,9 @@ nav ul{
     padding-left: 430px;
 }
 
-nav li {
-    font-family: Oxygen;
+nav a{
+    font-family: Oxygen, Arial, Helvetica, sans-serif;
+    color:#2E2E2E;
     font-size: 11px;
     font-weight: 400;
     line-height: 26px;
@@ -121,17 +116,21 @@ nav li {
     display: inline-block;
     margin-left: 15px;
     margin-right: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 footer nav{
     color: #FFFFFF;
     width: 1190px;
     height: 64px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-right: 0px;
     background-color: #232F3899;
 }
 
-footer nav li{
+footer nav a{
+    color: #FFFFFF;
     opacity: 0.6;
+    padding-bottom: 10px;
 }
