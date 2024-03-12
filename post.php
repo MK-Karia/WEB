@@ -12,7 +12,7 @@
     <body> 
         <main>
             <nav>
-                <img src="img/Logo.svg" alt="Logo"/>
+                <img src="images/Logo.svg" alt="Logo"/>
                 <ul>
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -24,7 +24,7 @@
                 <h1>The Road Ahead</h1>
                 <h2>The road ahead might be paved - it might not be.</h2>
             </div>
-            <img src="img/the-road-ahead.jpg" alt="Main picture"/>
+            <img src="images/the-road-ahead.jpg" alt="Main picture"/>
             <div class="content">
                 <article>
                     <p>Dark spruce forest frowned on either side the frozen waterway. 
@@ -76,7 +76,7 @@
         </main>
         <footer>
             <nav>
-                <img src="img/Logo_bottom.svg" alt="Logo"/>
+                <img src="images/Logo_bottom.svg" alt="Logo"/>
                 <ul>
                     <a href="#">Home</a>
                     <a href="#">About</a>

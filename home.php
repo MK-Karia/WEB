@@ -12,7 +12,7 @@
     <body> 
         <header class="header">
             <nav class="nav-box">
-                <img src="img/Logo_bottom.svg" alt="Logo">
+                <img src="images/Logo_bottom.svg" alt="Logo">
                 <ul class="nav-box__list">
                     <li class="nav-box__item">
                         <a class="nav-box__link" href="#">Home</a>
@@ -24,7 +24,7 @@
                         <a class="nav-box__link" href="#">Categories</a>
                     </li>
                     <li class="nav-box__item">
-                        <a class="nav-box__link"  href="#">Contact</a>
+                        <a class="nav-box__link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -61,14 +61,14 @@
                 <h3 class="section-title">Featured Posts</h3>
                 <hr class="hr">
                 <div class="featured__box">
-                    <a class="featured__box-link" href="the-road-ahead.html">
+                    <a class="featured__box-link" href="post.php">
                         <div class="featured__elem featured__elem-container featured__elem1">
                             <p class="featured__category featured__link-to-photography">Photography</p>
                             <h4 class="featured__title">The Road Ahead</h4>
                             <h5 class="featured__subtitle">The road ahead might be paved - it might not be.</h5>
                             <div class="featured__infobox">
                                 <div class="featured__about-author">
-                                    <img class="featured__avatar" src="img/mat-vogels.jpg" alt="mat-vogels">
+                                    <img class="featured__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
                                     <p class="featured__author-name">Mat Vogels</p>
                                 </div>    
                                     <p class="featured__date">September 25, 2015</p>
@@ -82,7 +82,7 @@
                             <h5 class="featured__subtitle">Once a year, go someplace you’ve never been before.</h5>
                             <div class="featured__infobox">
                                 <div class="featured__about-author">
-                                    <img class="featured__avatar" src="img/william-wong.jpg" alt="william-wong">
+                                    <img class="featured__avatar" src="images/william-wong.jpg" alt="william-wong">
                                     <p class="featured__author-name">William Wong</p>
                                 </div>    
                                     <p class="featured__date">September 25, 2015</p>
@@ -98,7 +98,7 @@
                     <li class="most-recent__list-elem">
                         <a class="featured__box-link" href="#">
                             <div class="most-recent__elem most-recent__elem-1">
-                                <img class="most-recent__elem-img" src="img/still-standing-tall.jpg" alt="Still Standing Tall">
+                                <img class="most-recent__elem-img" src="images/still-standing-tall.jpg" alt="Still Standing Tall">
                                 <div class="most-recent__about-elem">
                                     <h4 class="most-recent__title">Still Standing Tall</h4>
                                     <h5 class="most-recent__subtitle">Life begins at the end of your comfort zone.</h5>
@@ -106,7 +106,7 @@
                                 <hr class="most-recent__elem-hr">
                                 <div class="most-recent__infobox">
                                     <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="img/william-wong.jpg" alt="william-wong">
+                                        <img class="most-recent__avatar" src="images/william-wong.jpg" alt="william-wong">
                                         <p class="most-recent__author-name">William Wong</p>
                                     </div>    
                                     <p class="most-recent__date">9/25/2015</p>
@@ -117,7 +117,7 @@
                     <li class="most-recent__list-elem">
                         <a class="featured__box-link" href="#">
                             <div class="most-recent__elem elem most-recent__elem-2">
-                                <img class="most-recent__elem-img" src="img/sunny-side-up.jpg" alt="Sunny Side Up">
+                                <img class="most-recent__elem-img" src="images/sunny-side-up.jpg" alt="Sunny Side Up">
                                 <div class="most-recent__about-elem">
                                     <h4 class="most-recent__title">Sunny Side Up</h4>
                                     <h5 class="most-recent__subtitle">No place is ever as bad as they tell you it’s going to be.</h5>
@@ -125,7 +125,7 @@
                                 <hr class="most-recent__elem-hr">
                                 <div class="most-recent__infobox">
                                     <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="img/mat-vogels.jpg" alt="mat-vogels">
+                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
                                         <p class="most-recent__author-name">Mat Vogels</p>
                                     </div>    
                                     <p class="most-recent__date">9/25/2015</p>
@@ -136,7 +136,7 @@
                     <li class="most-recent__list-elem">
                         <a class="featured__box-link" href="#">
                             <div class="most-recent__elem elem most-recent__elem-3">
-                                <img class="most-recent__elem-img" src="img/water-falls.jpg" alt="Water Falls">
+                                <img class="most-recent__elem-img" src="images/water-falls.jpg" alt="Water Falls">
                                 <div class="most-recent__about-elem">
                                     <h4 class="most-recent__title">Water Falls</h4>
                                     <h5 class="most-recent__subtitle">We travel not to escape life, but for life not to escape us.</h5>
@@ -144,7 +144,7 @@
                                 <hr class="most-recent__elem-hr">
                                 <div class="most-recent__infobox">
                                     <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="img/mat-vogels.jpg" alt="mat-vogels">
+                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
                                         <p class="most-recent__author-name">Mat Vogels</p>
                                     </div>    
                                     <p class="most-recent__date">9/25/2015</p>
@@ -155,7 +155,7 @@
                     <li class="most-recent__list-elem">
                         <a class="featured__box-link" href="#">
                             <div class="most-recent__elem elem most-recent__elem-4">
-                                <img class="most-recent__elem-img" src="img/through-the-mist.jpg" alt="Through the Mist">
+                                <img class="most-recent__elem-img" src="images/through-the-mist.jpg" alt="Through the Mist">
                                 <div class="most-recent__about-elem">
                                     <h4 class="most-recent__title">Through the Mist</h4>
                                     <h5 class="most-recent__subtitle">Travel makes you see what a tiny place you occupy in the world.</h5>
@@ -163,7 +163,7 @@
                                 <hr class="most-recent__elem-hr">
                                 <div class="most-recent__infobox">
                                     <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="img/william-wong.jpg" alt="william-wong">
+                                        <img class="most-recent__avatar" src="images/william-wong.jpg" alt="william-wong">
                                         <p class="most-recent__author-name">William Wong</p>
                                     </div>    
                                     <p class="most-recent__date">9/25/2015</p>
@@ -174,7 +174,7 @@
                     <li class="most-recent__list-elem">
                         <a class="featured__box-link" href="#">
                             <div class="most-recent__elem elem most-recent__elem-5">
-                                <img class="most-recent__elem-img" src="img/awaken-early.jpg" alt="Awaken Early">
+                                <img class="most-recent__elem-img" src="images/awaken-early.jpg" alt="Awaken Early">
                                 <div class="most-recent__about-elem">
                                     <h4 class="most-recent__title">Awaken Early</h4>
                                     <h5 class="most-recent__subtitle">Not all those who wander are lost.</h5>
@@ -182,7 +182,7 @@
                                 <hr class="most-recent__elem-hr">
                                 <div class="most-recent__infobox">
                                     <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="img/mat-vogels.jpg" alt="mat-vogels">
+                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
                                         <p class="most-recent__author-name">Mat Vogels</p>
                                     </div>    
                                     <p class="most-recent__date">9/25/2015</p>
@@ -193,7 +193,7 @@
                     <li class="most-recent__list-elem">
                         <a class="featured__box-link" href="#">
                             <div class="most-recent__elem elem most-recent__elem-6">
-                                <img class="most-recent__elem-img" src="img/try-it-always.jpg" alt="Try it Always">
+                                <img class="most-recent__elem-img" src="images/try-it-always.jpg" alt="Try it Always">
                                 <div class="most-recent__about-elem">
                                     <h4 class="most-recent__title">Try it Always</h4>
                                     <h5 class="most-recent__subtitle">The world is a book, and those who do not travel read only one page.</h5>
@@ -201,7 +201,7 @@
                                 <hr class="most-recent__elem-hr">
                                 <div class="most-recent__infobox">
                                     <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="img/mat-vogels.jpg" alt="mat-vogels">
+                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
                                         <p class="most-recent__author-name">Mat Vogels</p>
                                     </div>    
                                     <p class="most-recent__date">9/25/2015</p>
@@ -214,7 +214,7 @@
         </main>
         <footer class="footer">
             <nav class="nav-box footer__nav-box">
-                <img src="img/Logo_bottom.svg" alt="Logo">
+                <img src="images/Logo_bottom.svg" alt="Logo">
                 <ul class="nav-box__list footer__list">
                     <li class="nav-box__item">
                         <a class="nav-box__link" href="#">Home</a>
@@ -226,7 +226,7 @@
                         <a class="nav-box__link" href="#">Categories</a>
                     </li>
                     <li class="nav-box__item">
-                        <a class="nav-box__link"  href="#">Contact</a>
+                        <a class="nav-box__link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
