@@ -1,3 +1,79 @@
+<?php
+$featurePosts = [
+    [
+        'title' => 'The Road Ahead',
+        'subtitle' => 'The road ahead might be paved - it might not be.',
+        'categoria' => 'Photography',
+        'categoria_link' => 'featured__link-to-photography',
+        'img_modifier' => 'images/mat-vogels.jpg',
+        'author' => 'Mat Vogels',
+        'date' => 'September 25, 2015',
+        'class' => 'featured__elem1'
+    ],
+    [
+        'title' => 'From Top Do',
+        'subtitle' => 'Once a year, go someplace you’ve never been before.',
+        'categoria' => 'Adventure',
+        'categoria_link' => 'featured__link-to-adventure',
+        'img_modifier' => 'images/william-wong.jpg',
+        'author' => 'William Wong',
+        'date' => 'September 25, 2015',
+        'class' => 'featured__elem2'
+    ]
+];
+
+$mostRecentPosts = [
+    [
+        'title' => 'Still Standing Tall',
+        'subtitle' => 'Life begins at the end of your comfort zone.',
+        'img_modifier' => 'images/william-wong.jpg',
+        'author' => 'William Wong',
+        'date' => '9/25/2015',
+        'img_post' => 'images/still-standing-tall.jpg'
+    ],
+    [
+        'title' => 'Sunny Side Up',
+        'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
+        'img_modifier' => 'images/mat-vogels.jpg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+        'img_post' => 'images/sunny-side-up.jpg'
+    ],
+    [
+        'title' => 'Water Falls',
+        'subtitle' => 'We travel not to escape life, but for life not to escape us.',
+        'img_modifier' => 'images/mat-vogels.jpg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+        'img_post' => 'images/water-falls.jpg'
+    ],
+    [
+        'title' => 'Through the Mist',
+        'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
+        'img_modifier' => 'images/william-wong.jpg',
+        'author' => 'William Wong',
+        'date' => '9/25/2015',
+        'img_post' => 'images/through-the-mist.jpg'
+    ],
+    [
+        'title' => 'Awaken Early',
+        'subtitle' => 'Not all those who wander are lost.',
+        'img_modifier' => 'images/mat-vogels.jpg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+        'img_post' => 'images/awaken-early.jpg'
+    ],
+    [
+        'title' => 'Try it Always',
+        'subtitle' => 'The world is a book, and those who do not travel read only one page.',
+        'img_modifier' => 'images/mat-vogels.jpg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+        'img_post' => 'images/try-it-always.jpg'
+    ]
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -50,10 +126,10 @@
                         <a class="navigation__link" href="#">Vacation</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link"  href="#">Travel</a>
+                        <a class="navigation__link" href="#">Travel</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link"  href="#">Adventure</a>
+                        <a class="navigation__link" href="#">Adventure</a>
                     </li>
                 </ul>
             </nav>
@@ -61,154 +137,22 @@
                 <h3 class="section-title">Featured Posts</h3>
                 <hr class="hr">
                 <div class="featured__box">
-                    <a class="featured__box-link" href="post.php">
-                        <div class="featured__elem featured__elem-container featured__elem1">
-                            <p class="featured__category featured__link-to-photography">Photography</p>
-                            <h4 class="featured__title">The Road Ahead</h4>
-                            <h5 class="featured__subtitle">The road ahead might be paved - it might not be.</h5>
-                            <div class="featured__infobox">
-                                <div class="featured__about-author">
-                                    <img class="featured__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
-                                    <p class="featured__author-name">Mat Vogels</p>
-                                </div>    
-                                    <p class="featured__date">September 25, 2015</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__box-link" href="#">
-                        <div class="featured__elem featured__elem-container featured__elem2">
-                            <p class="featured__category">Adventure</p>
-                            <h4 class="featured__title">From Top Down</h4>
-                            <h5 class="featured__subtitle">Once a year, go someplace you’ve never been before.</h5>
-                            <div class="featured__infobox">
-                                <div class="featured__about-author">
-                                    <img class="featured__avatar" src="images/william-wong.jpg" alt="william-wong">
-                                    <p class="featured__author-name">William Wong</p>
-                                </div>    
-                                    <p class="featured__date">September 25, 2015</p>
-                            </div>
-                        </div>
-                    </a>
+                    <?php 
+                        foreach ($featurePosts as $post) {
+                            include 'feature_post_preview.php';
+                        }
+                    ?>
                 </div>
             </div>
             <div class="most-recent">
                 <h3 class="section-title">Most Recent</h3>
                 <hr class="hr">
                 <ul class="most-recent__list">
-                    <li class="most-recent__list-elem">
-                        <a class="featured__box-link" href="#">
-                            <div class="most-recent__elem most-recent__elem-1">
-                                <img class="most-recent__elem-img" src="images/still-standing-tall.jpg" alt="Still Standing Tall">
-                                <div class="most-recent__about-elem">
-                                    <h4 class="most-recent__title">Still Standing Tall</h4>
-                                    <h5 class="most-recent__subtitle">Life begins at the end of your comfort zone.</h5>
-                                </div>
-                                <hr class="most-recent__elem-hr">
-                                <div class="most-recent__infobox">
-                                    <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="images/william-wong.jpg" alt="william-wong">
-                                        <p class="most-recent__author-name">William Wong</p>
-                                    </div>    
-                                    <p class="most-recent__date">9/25/2015</p>
-                                </div>     
-                            </div>
-                        </a>
-                    </li>
-                    <li class="most-recent__list-elem">
-                        <a class="featured__box-link" href="#">
-                            <div class="most-recent__elem elem most-recent__elem-2">
-                                <img class="most-recent__elem-img" src="images/sunny-side-up.jpg" alt="Sunny Side Up">
-                                <div class="most-recent__about-elem">
-                                    <h4 class="most-recent__title">Sunny Side Up</h4>
-                                    <h5 class="most-recent__subtitle">No place is ever as bad as they tell you it’s going to be.</h5>
-                                </div>    
-                                <hr class="most-recent__elem-hr">
-                                <div class="most-recent__infobox">
-                                    <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
-                                        <p class="most-recent__author-name">Mat Vogels</p>
-                                    </div>    
-                                    <p class="most-recent__date">9/25/2015</p>
-                                </div>       
-                            </div>
-                        </a>
-                    </li>
-                    <li class="most-recent__list-elem">
-                        <a class="featured__box-link" href="#">
-                            <div class="most-recent__elem elem most-recent__elem-3">
-                                <img class="most-recent__elem-img" src="images/water-falls.jpg" alt="Water Falls">
-                                <div class="most-recent__about-elem">
-                                    <h4 class="most-recent__title">Water Falls</h4>
-                                    <h5 class="most-recent__subtitle">We travel not to escape life, but for life not to escape us.</h5>
-                                </div>    
-                                <hr class="most-recent__elem-hr">
-                                <div class="most-recent__infobox">
-                                    <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
-                                        <p class="most-recent__author-name">Mat Vogels</p>
-                                    </div>    
-                                    <p class="most-recent__date">9/25/2015</p>
-                                </div>                           
-                            </div>
-                        </a>
-                    </li>
-                    <li class="most-recent__list-elem">
-                        <a class="featured__box-link" href="#">
-                            <div class="most-recent__elem elem most-recent__elem-4">
-                                <img class="most-recent__elem-img" src="images/through-the-mist.jpg" alt="Through the Mist">
-                                <div class="most-recent__about-elem">
-                                    <h4 class="most-recent__title">Through the Mist</h4>
-                                    <h5 class="most-recent__subtitle">Travel makes you see what a tiny place you occupy in the world.</h5>
-                                </div>    
-                                <hr class="most-recent__elem-hr">
-                                <div class="most-recent__infobox">
-                                    <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="images/william-wong.jpg" alt="william-wong">
-                                        <p class="most-recent__author-name">William Wong</p>
-                                    </div>    
-                                    <p class="most-recent__date">9/25/2015</p>
-                                </div>                         
-                            </div>
-                        </a>
-                    </li>
-                    <li class="most-recent__list-elem">
-                        <a class="featured__box-link" href="#">
-                            <div class="most-recent__elem elem most-recent__elem-5">
-                                <img class="most-recent__elem-img" src="images/awaken-early.jpg" alt="Awaken Early">
-                                <div class="most-recent__about-elem">
-                                    <h4 class="most-recent__title">Awaken Early</h4>
-                                    <h5 class="most-recent__subtitle">Not all those who wander are lost.</h5>
-                                </div>    
-                                <hr class="most-recent__elem-hr">
-                                <div class="most-recent__infobox">
-                                    <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
-                                        <p class="most-recent__author-name">Mat Vogels</p>
-                                    </div>    
-                                    <p class="most-recent__date">9/25/2015</p>
-                                </div>                         
-                            </div>
-                        </a>
-                    </li>
-                    <li class="most-recent__list-elem">
-                        <a class="featured__box-link" href="#">
-                            <div class="most-recent__elem elem most-recent__elem-6">
-                                <img class="most-recent__elem-img" src="images/try-it-always.jpg" alt="Try it Always">
-                                <div class="most-recent__about-elem">
-                                    <h4 class="most-recent__title">Try it Always</h4>
-                                    <h5 class="most-recent__subtitle">The world is a book, and those who do not travel read only one page.</h5>
-                                </div>    
-                                <hr class="most-recent__elem-hr">
-                                <div class="most-recent__infobox">
-                                    <div class="most-recent__about-author">
-                                        <img class="most-recent__avatar" src="images/mat-vogels.jpg" alt="mat-vogels">
-                                        <p class="most-recent__author-name">Mat Vogels</p>
-                                    </div>    
-                                    <p class="most-recent__date">9/25/2015</p>
-                                </div>                  
-                            </div>
-                        </a>                        
-                    </li>
+                    <?php 
+                        foreach ($mostRecentPosts as $post) {
+                            include 'most_recent_post_preview.php';
+                        }
+                    ?>
                 </ul>
             </div>
         </main>
