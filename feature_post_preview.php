@@ -1,4 +1,4 @@
-<a class="featured__box-link" href="post.php">
+<a class="featured__box-link" title='<?= $post['title'] ?>' href='/post?id=<?= $post['id'] ?>'>
     <div class="featured__elem featured__elem-container <?= $post['class'] ?>">
         <p class="featured__category <?= $post['categoria_link'] ?>"><?= $post['categoria'] ?></p>
         <h4 class="featured__title"><?= $post['title'] ?></h4>
@@ -8,7 +8,7 @@
                 <img class="featured__avatar" src="<?= $post['img_modifier'] ?>" alt="<?= $post['author'] ?>">
                 <p class="featured__author-name"><?= $post['author'] ?></p>
             </div>    
-            <p class="featured__date"><?= $post['date'] ?></p>
+            <p class="featured__date"><?= date("F j, Y", $post['date'])?></p>
         </div>
     </div>
 </a>

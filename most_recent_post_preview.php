@@ -1,5 +1,5 @@
 <li class="most-recent__list-elem">
-    <a class="featured__box-link" href="#">
+    <a class="most-recent__box-link" title='<?= $post['title'] ?>' href='/post?id=<?= $post['id'] ?>'>
         <div class="most-recent__elem">
             <img class="most-recent__elem-img" src="<?= $post['img_post'] ?>" alt="<?= $post['title'] ?>">
             <div class="most-recent__about-elem">
@@ -12,7 +12,7 @@
                     <img class="most-recent__avatar" src="<?= $post['img_modifier'] ?>" alt="<?= $post['author'] ?>">
                     <p class="most-recent__author-name"><?= $post['author'] ?></p>
                 </div>    
-                <p class="most-recent__date"><?= $post['date'] ?></p>
+                <p class="most-recent__date"><?= date("n/d/y", $post['date'])?></p>
             </div>     
         </div>
     </a>

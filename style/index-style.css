@@ -249,6 +249,11 @@
     padding-bottom: 89px;
 }
 
+.most-recent__box-link {
+    display: block;
+    text-decoration: none;
+}
+
 .most-recent__list {
     display: flex;
     flex-wrap: wrap;

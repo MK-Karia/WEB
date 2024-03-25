@@ -1,33 +1,11 @@
-<!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="utf-8">
-        <title>Страница блога</title>
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    </head>
-    <body> 
-        <main>
-            <nav>
-                <img src="images/Logo.svg" alt="Logo"/>
-                <ul>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Categories</a>
-                    <a href="#">Contact</a>
-                </ul>
-            </nav>
-            <div class="header-box">
-                <h1>The Road Ahead</h1>
-                <h2>The road ahead might be paved - it might not be.</h2>
-            </div>
-            <img src="images/the-road-ahead.jpg" alt="Main picture"/>
-            <div class="content">
-                <article>
-                    <p>Dark spruce forest frowned on either side the frozen waterway. 
+<?php
+$post = [
+  'id' => 1,
+  'title' => 'The Road Ahead',
+  'subtitle' => 'The road ahead might be paved - it might not be.',
+  'author' => 'Me',
+  'img_post' => 'images/the-road-ahead.jpg',
+  'content-text' => 'Dark spruce forest frowned on either side the frozen waterway. 
                         The trees had been stripped by a recent wind of their white 
                         covering of frost, and they seemed to lean towards each other, 
                         black and ominous, in the fading light. A vast silence reigned over the land. 
@@ -69,8 +47,39 @@
                         of some ghost. But under it all they were men, penetrating the land of 
                         desolation and mockery and silence, puny adventurers bent on colossal adventure, 
                         pitting themselves against the might of a world as remote and alien and 
-                        pulseless as the abysses of space.
-                    </p>
+                        pulseless as the abysses of space.'
+];
+?>
+
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Страница блога</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <main>
+            <nav>
+                <img src="images/Logo.svg" alt="Logo"/>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </nav>
+            <div class="header-box">
+                <h1><?= $post['title'] ?></h1>
+                <h2><?= $post['subtitle'] ?></h2>
+            </div>
+            <img src="<?= $post['img_post']?>" alt="<?= $post['title'] ?>">
+            <div class="content">
+                <article>
+                    <p><?= $post['content-text'] ?></p>
                 </article>
             </div>
         </main>
