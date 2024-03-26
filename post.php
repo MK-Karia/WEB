@@ -1,10 +1,16 @@
 <?php
+
+$postId = "не определено";
+if(isset($_GET["id"])){
+    $postId = $_GET["id"];
+};
+
 $post = [
   'id' => 1,
-  'title' => 'The Road Ahead',
+  'title' => "({$postId}) The Road Ahead",
   'subtitle' => 'The road ahead might be paved - it might not be.',
   'author' => 'Me',
-  'img_post' => 'images/the-road-ahead.jpg',
+  'img_post' => 'https://localhost:8443/static/images/the-road-ahead.jpg',
   'content-text' => 'Dark spruce forest frowned on either side the frozen waterway. 
                         The trees had been stripped by a recent wind of their white 
                         covering of frost, and they seemed to lean towards each other, 
@@ -55,7 +61,7 @@ $post = [
     <head>
         <meta charset="utf-8">
         <title>Страница блога</title>
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://localhost:8443/static/style/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -64,7 +70,7 @@ $post = [
     <body> 
         <main>
             <nav>
-                <img src="images/Logo.svg" alt="Logo"/>
+                <a class="to-home" href='/home'><img src="https://localhost:8443/static/images/Logo.svg" alt="Logo"/></a>
                 <ul>
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -85,7 +91,7 @@ $post = [
         </main>
         <footer>
             <nav>
-                <img src="images/Logo_bottom.svg" alt="Logo"/>
+                <img src="https://localhost:8443/static/images/Logo_bottom.svg" alt="Logo"/>
                 <ul>
                     <a href="#">Home</a>
                     <a href="#">About</a>

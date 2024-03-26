@@ -6,7 +6,7 @@ $featurePosts = [
         'subtitle' => 'The road ahead might be paved - it might not be.',
         'categoria' => 'Photography',
         'categoria_link' => 'featured__link-to-photography',
-        'img_modifier' => 'images/mat-vogels.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/mat-vogels.jpg',
         'author' => 'Mat Vogels',
         'date' => 1443182409,
         'class' => 'featured__elem1'
@@ -17,7 +17,7 @@ $featurePosts = [
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
         'categoria' => 'Adventure',
         'categoria_link' => 'featured__link-to-adventure',
-        'img_modifier' => 'images/william-wong.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/william-wong.jpg',
         'author' => 'William Wong',
         'date' => 1443182409,
         'class' => 'featured__elem2'
@@ -29,55 +29,55 @@ $mostRecentPosts = [
         'id' => 3,
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
-        'img_modifier' => 'images/william-wong.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/william-wong.jpg',
         'author' => 'William Wong',
         'date' => 1443182409,
-        'img_post' => 'images/still-standing-tall.jpg'
+        'img_post' => 'https://localhost:8443/static/images/still-standing-tall.jpg'
     ],
     [
         'id' => 4,
         'title' => 'Sunny Side Up',
         'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
-        'img_modifier' => 'images/mat-vogels.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/mat-vogels.jpg',
         'author' => 'Mat Vogels',
         'date' => 1443182409,
-        'img_post' => 'images/sunny-side-up.jpg'
+        'img_post' => 'https://localhost:8443/static/images/sunny-side-up.jpg'
     ],
     [
         'id' => 5,
         'title' => 'Water Falls',
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
-        'img_modifier' => 'images/mat-vogels.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/mat-vogels.jpg',
         'author' => 'Mat Vogels',
         'date' => 1443182409,
-        'img_post' => 'images/water-falls.jpg'
+        'img_post' => 'https://localhost:8443/static/images/water-falls.jpg'
     ],
     [
         'id' => 6,
         'title' => 'Through the Mist',
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
-        'img_modifier' => 'images/william-wong.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/william-wong.jpg',
         'author' => 'William Wong',
         'date' => 1443182409,
-        'img_post' => 'images/through-the-mist.jpg'
+        'img_post' => 'https://localhost:8443/static/images/through-the-mist.jpg'
     ],
     [
         'id' => 7,
         'title' => 'Awaken Early',
         'subtitle' => 'Not all those who wander are lost.',
-        'img_modifier' => 'images/mat-vogels.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/mat-vogels.jpg',
         'author' => 'Mat Vogels',
         'date' => 1443182409,
-        'img_post' => 'images/awaken-early.jpg'
+        'img_post' => 'https://localhost:8443/static/images/awaken-early.jpg'
     ],
     [
         'id' => 8,
         'title' => 'Try it Always',
         'subtitle' => 'The world is a book, and those who do not travel read only one page.',
-        'img_modifier' => 'images/mat-vogels.jpg',
+        'img_modifier' => 'https://localhost:8443/static/images/mat-vogels.jpg',
         'author' => 'Mat Vogels',
         'date' => 1443182409,
-        'img_post' => 'images/try-it-always.jpg'
+        'img_post' => 'https://localhost:8443/static/images/try-it-always.jpg'
     ]
 ];
 ?>
@@ -86,7 +86,7 @@ $mostRecentPosts = [
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
-        <link rel="stylesheet" href="style/index-style.css">
+        <link rel="stylesheet" href="https://localhost:8443/static/style/index-style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -95,7 +95,7 @@ $mostRecentPosts = [
     <body> 
         <header class="header">
             <nav class="nav-box">
-                <img src="images/Logo_bottom.svg" alt="Logo">
+                <a class="to-home" href='/home'><img src="https://localhost:8443/static/images/Logo_bottom.svg" alt="Logo"></a>
                 <ul class="nav-box__list">
                     <li class="nav-box__item">
                         <a class="nav-box__link" href="#">Home</a>
@@ -165,7 +165,7 @@ $mostRecentPosts = [
         </main>
         <footer class="footer">
             <nav class="nav-box footer__nav-box">
-                <img src="images/Logo_bottom.svg" alt="Logo">
+                <img src="https://localhost:8443/static/images/Logo_bottom.svg" alt="Logo">
                 <ul class="nav-box__list footer__list">
                     <li class="nav-box__item">
                         <a class="nav-box__link" href="#">Home</a>
